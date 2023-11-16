@@ -1,0 +1,84 @@
+html {
+    font: 16px/1.6 sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#game {
+    width: 500px;
+    height: 600px;
+    position: absolute;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #03a9f4, #81d4fa);
+}
+
+h1,
+h2 {
+    position: absolute;
+    z-index: 2;
+    color: #b71c1c;
+    text-shadow: -2px -2px 2px gold, 2px 2px 2px gold, -2px 2px 2px gold,
+        2px -2px 2px gold;
+    text-align: center;
+    user-select: none;
+    margin: 0 10px;
+}
+
+h1 {
+    width: 100%;
+    top: 0;
+}
+
+h2 {
+    bottom: 0;
+}
+
+h2 + h2 {
+    right: 0;
+}
+
+#bird {
+    width: 60px;
+    height: 45px;
+    position: absolute;
+    left: 220px;
+    background: linear-gradient(to bottom, #ffc107, #795548);
+    border-radius: 50%;
+    transition: all 0.2s;
+}
+
+.obstacle_holder {
+    position: absolute;
+    width: 60px;
+    height: 900px;
+    left: 500px;
+    transition: all 0.2s;
+}
+
+.obstacle {
+    width: 60px;
+    height: 350px;
+    position: absolute;
+    background: #1b5e20;
+    border-radius: 15px;
+    box-shadow: inset 8px 15px 15px #4caf50;
+}
+
+.obstacle + .obstacle {
+    bottom: 0;
+}
+
+button {
+    position: relative;
+    font-size: 2em;
+    border-radius: 5px;
+}
